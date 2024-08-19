@@ -1,8 +1,8 @@
 FROM archlinux:latest
 
-COPY .bashrc /root/.bashrc
+WORKDIR /root
 
-COPY setup.sh /root/setup.sh
+COPY . .
 
 RUN chmod +x /root/setup.sh && \
 	sh /root/setup.sh

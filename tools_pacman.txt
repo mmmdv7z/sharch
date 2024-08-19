@@ -1,0 +1,11 @@
+aircrack-ng
+git
+netcat
+net-tools
+nmap
+p7zip
+sqlmap
+tcpdump
+vim
+wireless_tools
+wpscan
