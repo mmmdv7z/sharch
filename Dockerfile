@@ -1,8 +1,11 @@
 FROM archlinux:latest
 
-RUN pacman -Syu --noconfirm
-
 COPY .bashrc /root/.bashrc
+
+COPY setup.sh /root/setup.sh
+
+RUN chmod +x /root/setup.sh && \
+	sh /root/setup.sh
 
 CMD ["bash"]
 
