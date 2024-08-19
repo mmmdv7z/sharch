@@ -12,5 +12,6 @@ docker build -t <image> .
 
 ```bash
 docker run --network host --privileged -d -t --name <containername> <image>
+docker exec -it <containername> bash
 ```
 
