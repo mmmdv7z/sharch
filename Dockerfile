@@ -4,8 +4,8 @@ WORKDIR /root
 
 COPY . .
 
-RUN chmod +x /root/setup.sh && \
-	sh /root/setup.sh
+RUN pacman -Syu --noconfirm && \
+	pacman -S --noconfirm - < core.txt
 
 CMD ["bash"]
 
