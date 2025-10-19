@@ -5,7 +5,7 @@ WORKDIR /root
 COPY . .
 
 RUN pacman -Syu --noconfirm && \
-	pacman -S --noconfirm - < core.txt
+	pacman -S --noconfirm git net-tools vim wireless_tools
 
 CMD ["bash"]
 

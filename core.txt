@@ -1,5 +1,0 @@
-git
-net-tools
-p7zip
-vim
-wireless_tools
