@@ -17,3 +17,16 @@ docker run --network host --privileged -d -t --name <containername> sharch
 docker exec -it <containername> bash
 ```
 
+## Pulling image remotely
+
+```bash
+docker pull stiermid/sharch:latest
+```
+
+### Running image
+
+```bash
+docker run --network host --privileged -d -t --name <containername> stiermid/sharch:latest
+docker exec -it <containername> bash
+```
+
